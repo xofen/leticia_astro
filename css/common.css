@@ -1,0 +1,96 @@
+:root {
+    --amarelo: #D2B128;
+    --laranja: #D18D28;
+    --marrom: #7C7041;
+    --marrom-trans: rgba(124, 112, 65, 0.5);
+    --roxo: #7C28D1;
+
+    --fonte-case: 'Literata', serif;
+    --fonte-body: 'Solway', serif;
+
+    --border-rad: 0 0 0 15px;
+    --border-rad-top: 0 20px 0 0;
+    --border-rad-2: 5px 5px 5px 15px;
+}
+
+html {
+    font-size: 1.1rem;
+    font-family: var(--fonte-body);
+}
+
+/* ____________________ COMMON ________________ */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    border-radius: var(--border-rad-2);
+
+    font-size: 1.2rem;
+    padding: .4rem .8rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--roxo);
+}
+
+/* ____________________ HEADER ________________ */
+
+header {
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+
+    border-radius: var(--border-rad);
+}
+
+header h1 {
+    font-family: var(--fonte-case);
+    font-size: 2rem;
+}
+
+header h2 {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    letter-spacing: .1rem;
+    font-variant: small-caps;
+}
+
+#menu {
+    display: none;
+}
+
+#menu-container i {
+    font-size: 1.4rem;
+    color: var(--marrom);
+    cursor: pointer;
+    margin-right: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ____________________ SECTIONS ________________ */
+
+section {
+    padding: 25px;
+}
+
+h4 {
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+}
