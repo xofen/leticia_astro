@@ -1,9 +1,9 @@
 :root {
-    --amarelo: #D2B128;
-    --laranja: #D18D28;
-    --marrom: #7C7041;
-    --marrom-trans: rgba(124, 112, 65, 0.5);
-    --roxo: #7C28D1;
+    --principal: #fa9b19;
+    --secundaria: #D18D28;
+    --cont-a: #7a6649;
+    --cont-a-trans: rgba(122, 102, 73, 0.5);
+    --cont-h: #19A3FA;
 
     --fonte-case: 'Literata', serif;
     --fonte-body: 'Solway', serif;
@@ -11,6 +11,7 @@
     --border-rad: 0 0 0 15px;
     --border-rad-top: 0 20px 0 0;
     --border-rad-2: 5px 5px 5px 15px;
+    --border-rad-3: 5px 5px 15px 5px;
 }
 
 html {
@@ -26,25 +27,29 @@ a {
 }
 
 button {
-    background-color: var(--laranja);
+    background-color: var(--principal);
     color: white;
     border: none;
     border-radius: var(--border-rad-2);
 
     font-size: 1.2rem;
-    padding: .4rem .8rem;
+    padding: .5rem 1rem;
 
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--roxo);
+    background-color: var(--cont-h);
+}
+
+* {
+    transition: all .3s;
 }
 
 /* ____________________ HEADER ________________ */
 
 header {
-    background-color: var(--laranja);
+    background-color: var(--principal);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +99,7 @@ header h2 {
     font-variant: small-caps;
     width: 100%;
     text-align: center;
-    border: 1px solid var(--laranja);
+    border: 1px solid var(--secundaria);
     border-radius: var(--border-rad-2);
     padding: 1rem 0;
     background-color: white;
@@ -102,7 +107,7 @@ header h2 {
 
 #menu-container i {
     font-size: 1.4rem;
-    color: var(--marrom);
+    color: var(--cont-a);
     cursor: pointer;
     margin-right: 1rem;
     width: 50px;
@@ -124,4 +129,65 @@ h4 {
     margin-bottom: 10px;
 
     font-size: 1.3rem;
+}
+
+/* ____________________ FOOTER ________________ */
+footer {
+    margin-top: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: var(--principal);
+    border-radius: var(--border-rad-top);
+}
+
+#contato {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer h4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3rem;
+}
+
+.last-dot {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+
+    color: black;
+}
+
+#social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2.3rem;
+    margin-right: 2rem;
+}
+
+#social-icons a {
+    background-color: white;
+    color: var(--cont-a);
+    padding: .5rem;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--cont-a);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-icons a:hover {
+    background-color: var(--cont-h);
+    border: 2px solid white;
+    color: white;
 }

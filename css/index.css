@@ -1,7 +1,7 @@
 /* ____________________ SOBRE ________________ */
 #sobre {
 
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
 }
 
@@ -29,23 +29,42 @@
     font-style: italic;
     margin-bottom: 2.3rem;
     margin-right: .7rem;
-    color: var(--marrom);
+    color: var(--cont-a);
+}
+
+#sobre img {
+    width: 170px;
+    border-radius: 50%;
+
+    margin-bottom: 1.6rem;
+    margin-left: 1.7rem;
 }
 
 
 /* ____________________ SERVIÇOS ________________ */
+#servicos-container {
+    margin: 3rem 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: max-content;
+    min-width: 45%;
+}
+
 #servicos {
-    margin: 4rem 2rem 0 2rem;
-    border: 2px solid var(--marrom);
-    border-radius: 5px 5px 5px 15px;
+    padding: 2rem 1rem 2rem .2rem;
+    border: 2px solid var(--secundaria);
+    border-radius: var(--border-rad-3);
     max-width: max-content;
     min-width: 45%;
 }
 
 #servicos h4 {
     padding: .5rem 1rem .6rem 1rem;
+    margin-left: 1rem;
     width: max-content;
-    border-bottom: 1px solid var(--marrom-trans);
+    border-bottom: 1px solid var(--cont-a-trans);
 }
 
 #servicos details {
@@ -63,25 +82,30 @@
 
 #servicos summary::marker {
     font-size: .8rem;
-    color: var(--marrom);
+    color: var(--cont-a);
 }
 
 #servicos summary:hover {
-    background-color: var(--roxo);
-    color: white;
-    border-radius: var(--border-rad-2);
+    background-color: var(--cont-h);
+    color: black;
+    border-radius: var(--border-rad-3);
 }
 
 #servicos details[open] > summary {
-    background-color: var(--roxo);
-    color: white;
-    border-radius: var(--border-rad-2);
+    background-color: var(--cont-h);
+    color: black;
+    border-radius: var(--border-rad-3);
 }
 
 #servicos p {   
     font-weight: 300;
     padding: 1rem .4rem;
     line-height: 1.3rem;
+}
+
+#servicos-container a {
+    align-self: center;
+    margin-top: 1.6rem;
 }
 
 /* ____________________ BLOG ________________ */
@@ -98,8 +122,8 @@
     margin-top: 1rem;
     padding: .5rem;
 
-    border-top: 1px solid var(--marrom-trans);
-    border-bottom: 1px solid var(--marrom-trans);
+    border-top: 1px solid var(--cont-a-trans);
+    border-bottom: 1px solid var(--cont-a-trans);
 }
 
 #title-blog {
@@ -140,7 +164,7 @@
     font-weight: 300;
     position: absolute;
     right: 4.5rem;   
-    color: var(--marrom);
+    color: var(--cont-a);
 }
 
 #blog button {
@@ -150,63 +174,5 @@
 }
 
 #blog button a {
-    color: white;
-}
-
-
-/* ____________________ CONTATO ________________ */
-#contato {
-    margin-top: 7rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    display: flex;
-    justify-content: space-evenly;
-
-    background-color: var(--marrom);
-    border-radius: var(--border-rad-top);
-}
-
-#contato h4 {
-    margin: 0;
-    display: flex;
-    align-items: center;
-
-    color: white;
-    font-size: 1.3rem;
-}
-
-.last-dot {
-    font-size: 2.3rem;
-    margin-left: 1rem;
-
-    color: black;
-}
-
-#social-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 2.3rem;
-    margin-right: 2rem;
-}
-
-#social-icons a {
-    background-color: white;
-    color: var(--marrom);
-    padding: .5rem;
-    height: 50px;
-    width: 50px;
-    border: 2px solid var(--amarelo);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#social-icons a:hover {
-    background-color: var(--amarelo);
-    border: 2px solid white;
     color: white;
 }
