@@ -1,5 +1,6 @@
 :root {
     --principal: #fa9b19;
+    --principal-dim: hsla(35, 96%, 54%, 0.5);
     --secundaria: #D18D28;
     --cont-a: #7a6649;
     --cont-a-trans: rgba(122, 102, 73, 0.5);
@@ -19,6 +20,15 @@ html {
     font-family: var(--fonte-body);
 }
 
+@media screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr;
+        grid-gap: 1.5rem;
+    }
+}
+
 /* ____________________ COMMON ________________ */
 
 a {
@@ -27,7 +37,7 @@ a {
 }
 
 button {
-    background-color: var(--principal);
+    background-color: var(--secundaria);
     color: white;
     border: none;
     border-radius: var(--border-rad-2);
@@ -70,6 +80,13 @@ header h2 {
     letter-spacing: .1rem;
     font-variant: small-caps;
     font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+    #header-title {
+        margin-left: 9%;
+        width: 100%;
+    }
 }
 
 #menu {
@@ -117,6 +134,44 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    #menu-container {
+        margin-right: 8%;
+        position: relative;
+    }
+
+    #menu {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        margin-right: 2rem;
+    }
+
+    #menu ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        width: max-content;
+    }
+
+    #menu ul a {
+        font-size: 1.2rem;
+        font-variant: small-caps;
+        width: max-content;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline solid var(--cont-a);
+    }
+
+    #menu ul a:hover {
+        color: white;
+        text-decoration: wavy underline var(--cont-a);
+    }
+
+    #burger {
+        display: none;
+    }
 }
 
 /* ____________________ SECTIONS ________________ */
@@ -190,4 +245,15 @@ footer h4 {
     background-color: var(--cont-h);
     border: 2px solid white;
     color: white;
+}
+
+@media screen and (min-width: 1000px) {
+    footer {
+        padding: 2rem 0;
+        margin: 5rem auto auto auto;
+    }
+
+    #social-icons {
+        flex-direction: row;
+    }
 }

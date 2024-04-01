@@ -15,3 +15,19 @@ function myFunction() {
     f.style.display = "none";
   }
 }
+
+var width, height;
+window.onresize = window.onload = function() {
+    width = this.innerWidth;
+    height = this.innerHeight;
+
+    var detailsElements = document.getElementsByTagName("details");
+
+    for (var i = 0; i < detailsElements.length; i++) {
+        if (width > 1000) {
+            detailsElements[i].setAttribute("open", "");
+        } else {
+            detailsElements[i].removeAttribute("open");
+        }
+    }
+}
