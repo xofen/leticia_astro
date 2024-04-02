@@ -117,7 +117,7 @@
 #servicos summary {
     font-weight: 200;
     padding: .6rem;
-    list-style-type: '... ';
+    list-style-type: '\2736   ';
 }
 
 #servicos summary::marker {
@@ -213,6 +213,11 @@
     font-weight: 200;
     line-height: 1.2rem;
 
+}
+
+#last-post p::first-letter {
+    margin-left: 1rem;
+    font-weight: 400;
 }
 
 #last-post .last-w {
