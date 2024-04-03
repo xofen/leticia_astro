@@ -1,0 +1,82 @@
+#intro {
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+#intro h4 {
+    margin-left: 3rem;
+}
+
+.doisponto {
+    color: var(--cont-a-trans);
+    margin-left: .4rem;
+}
+
+@keyframes blackWhite {  
+    0% { background-color: var(--principal-dim); box-shadow: inset 20px 0 25px hsla(0, 0%, 50%, .7); }
+    50% { background-color: hsla(240, 100%, 25%, 0.4);  box-shadow: inset 20px 0 25px rgba(0, 0, 0, 0.5); }
+    100% { background-color: var(--principal-dim); box-shadow: inset 20px 0 25px hsla(0, 0%, 50%, .7); }
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: transparent;
+    animation: blackWhite infinite ease-in 12s;
+    position: absolute;
+    top: 32vh;
+    right: 20vw;
+    z-index: -1;
+    box-shadow: inset 30px 0 25px transparent;
+    filter: opacity(.6);
+}
+
+#servicos-box {
+    margin-top: 8rem;
+}
+
+#servicos-box h5 {
+    margin-bottom: .6rem;
+}
+
+#servicos-box h5::before {
+    content: "\2736   ";
+    color: var(--cont-h);
+}
+
+.hr-servicos {
+    margin-bottom: 2.8rem;
+    margin-top: 3rem;
+    margin-left: .7rem;
+    margin-right: 3.4rem;
+    color: var(--cont-a-trans);
+    filter: opacity(.3);
+}
+
+.luna-numerals {
+    margin-left: .9rem;
+    margin-right: .9rem;
+    font-weight: 100;
+    line-height: 1.3rem;
+}
+
+.numeral {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--cont-a);
+}
+
+#zodiac {
+    margin: 4rem auto 0 auto;
+
+    line-height: 2.6rem;
+    word-spacing: 1.5rem;
+}
+
+#zodiac h6 {
+    text-align: center;
+    filter: opacity(.15);
+    font-size: 1.2rem;
+}

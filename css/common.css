@@ -181,8 +181,24 @@ section {
 
 h4 {
     margin-bottom: 10px;
-
     font-size: 1.3rem;
+}
+
+.titulo-paginas {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+section p::first-letter {
+    margin-left: .6rem;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+    padding: 1rem .4rem;
+    line-height: 1.35rem;
 }
 
 /* ____________________ FOOTER ________________ */
