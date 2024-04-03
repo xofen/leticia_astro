@@ -4,6 +4,14 @@
     position: relative;
 }
 
+@media screen and (min-width: 1000px) {
+    #intro {
+        max-width: 41ch;
+        margin: 6rem auto 6rem auto;
+        font-size: 1.15rem;
+    }
+}
+
 #intro h4 {
     margin-left: 3rem;
 }
@@ -33,12 +41,30 @@
     filter: opacity(.6);
 }
 
+@media screen and (min-width: 1000px) {
+    .circle {
+        top: 30vh;
+        right: 2vw;
+    }
+}
+
+
+/* ____________________ SERVICOS ________________ */
 #servicos-box {
     margin-top: 8rem;
 }
 
+@media screen and (min-width: 1000px) {
+    #servicos-box {
+        max-width: 40ch;
+        min-width: 13ch;
+        margin: 10rem auto auto auto;
+    }
+}
+
 #servicos-box h5 {
     margin-bottom: .6rem;
+    margin-left: 3rem;
 }
 
 #servicos-box h5::before {
@@ -79,4 +105,15 @@
     text-align: center;
     filter: opacity(.15);
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1000px) {
+    #zodiac {
+        width: fit-content;
+        display: flex;
+        margin: 6rem auto 3rem auto;
+        justify-content: center;
+        gap: 2rem;
+        filter: opacity(.42);
+    }
 }
