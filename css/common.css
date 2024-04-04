@@ -189,6 +189,7 @@ h4 {
 section p::first-letter {
     margin-left: .6rem;
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
 p {

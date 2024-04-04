@@ -10,7 +10,41 @@
     border-radius: var(--border-rad-3);
 }
 
+@media screen and (min-width: 1000px) {
+    #intro {
+        width: fit-content;
+        margin: 6rem auto 2rem auto;
+        font-size: 1.15rem;
+
+        display: flex;
+        padding: auto;
+    }
+
+    #intro img {
+        width: 20vw;
+        margin: 0 0 0 0;
+    }
+
+    #intro p {
+        margin-left: 3rem;
+        width: 34ch;
+        height: fit-content;
+        align-self: flex-end;
+    }
+
+    #intro p::first-letter {
+        font-size: 1.9rem;
+    }
+}
+
 /* #curriculum */
+@media screen and (min-width: 1000px) {
+    #curriculum {
+        width: fit-content;
+        margin: 2rem auto 2rem 27%;
+    }
+}
+
 #curriculum h3 {
     margin-left: .7rem;
 }
@@ -50,6 +84,13 @@
     filter: opacity(.6);
 }
 
+@media screen and (min-width: 1000px) {
+    #quote {
+        margin: 5rem auto;
+        width: fit-content;
+    }
+}
+
 #quote p {
     font-style: italic;
 }
@@ -66,6 +107,14 @@
     padding: 0;
     display: block;
     margin: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+    #charm {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+    }
 }
 
 .orbiting-container {
