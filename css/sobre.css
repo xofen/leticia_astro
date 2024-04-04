@@ -1,0 +1,108 @@
+#intro {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+#intro img {
+    display: block;
+    margin: auto auto 2rem auto;
+    width: 60vw;
+    border-radius: var(--border-rad-3);
+}
+
+/* #curriculum */
+#curriculum h3 {
+    margin-left: .7rem;
+}
+
+.formations {
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+    line-height: 1.3rem;
+}
+
+#curriculum h6 {
+    font-size: 1.1rem;
+}
+
+#curriculum h6::before {
+    content: "\2736   ";
+    color: var(--cont-h);
+}
+
+#curriculum h5 {
+    margin: .3rem 0 0 1.2rem;
+    font-weight: 300;
+}
+
+.date {
+    font-size: .8rem;
+    margin-left: .2rem;
+    color: var(--cont-a);
+}
+
+/* #quote */
+#quote {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    line-height: 1.3rem;
+    filter: opacity(.6);
+}
+
+#quote p {
+    font-style: italic;
+}
+
+#quote .author {
+    text-align: right;
+    margin-right: 1.5rem;
+    color: var(--cont-a);
+}
+
+/* #charm */
+#charm {
+    position: relative;
+    padding: 0;
+    display: block;
+    margin: 3rem;
+}
+
+.orbiting-container {
+    position: absolute;
+    /* top: -2%; */
+    /* left: 18%; */
+    transform: translate(180%, -20%);
+}
+
+.orbiting-container2 {
+    position: absolute;
+    /* top: -2%; */
+    /* left: 18%; */
+    transform: translate(180%, -20%);
+}
+
+.orbiting-element {
+    width: 60px;
+    height: 60px;
+    background-color: hsla(240, 100%, 25%, 0.42); /* Cor de exemplo */
+    border-radius: 50%; /* Para torná-lo circular */
+    animation: orbit 22s linear infinite; /* Nome da animação, duração, tipo de animação e repetição */
+}
+
+.orbiting-element2 {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cont-a-trans); /* Cor de exemplo */
+    border-radius: 50%; /* Para torná-lo circular */
+    animation: orbit 26s linear infinite; /* Nome da animação, duração, tipo de animação e repetição */
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(-180px) rotate(0deg); /* Posição inicial */
+    }
+    to {
+        transform: rotate(-360deg) translateX(-180px) rotate(360deg); /* Posição final */
+    }
+}

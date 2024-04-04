@@ -48,6 +48,11 @@ button:hover {
     transition: all .3s;
 }
 
+.doisponto {
+    color: var(--cont-a-trans);
+    margin-left: .4rem;
+}
+
 /* ____________________ HEADER ________________ */
 
 header {
